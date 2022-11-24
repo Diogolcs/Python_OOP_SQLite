@@ -24,5 +24,13 @@ pessoas = PessoaDAO.getAll()
 for pessoa in pessoas:
  print(pessoa)
 
+novo = Pessoa(0, "Kevin maguary")
+
+novo = PessoaDAO.save(novo)
+
+pessoas = PessoaDAO.getAll(orderBy=True)
+for pessoa in pessoas:
+  print(pessoa)
+
 
 
